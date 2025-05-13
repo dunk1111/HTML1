@@ -7,21 +7,52 @@
 </head>
 <body>
     <h1><a href="index.html" target="_blank">WEB</a></h1>
-    <div id="grid">
-        <ol>   
-            <li><a href="1.html"target="_blank">HTML</a></li>
-            <li><a href="2.html"target="_blank">CSS</a></li>
-            <li><a href="3.html"target="_blank">JavaScript</a></li>
-        </ol>
-        <div id="article">
-            <h2>JavaScript</h2>
-            <p>
-                God, tell us the reason youth is wasted on the young 
-                It's hunting season and the lambs are on the run 
-                Searching for meaning But are we all lost 
-                stars, trying to light up the dark?
-            </p>
-        </div>
-    </div>
+    <input type="button" value="night" onclick=" 
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick=" 
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+    ">
+    <input id="night_day" type="button" value="night" onclick="
+        if (document.querySelector('#night_day').value === 'night'){
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+         document.querySelector('#night_day').value = 'day';
+        }
+        else {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+            document.querySelector('#night_day').value = 'night';
+        }
+    ">
+    <ol>   
+         <li><a href="1.html"target="_blank">HTML</a></li>
+         <li><a href="2.html"target="_blank">CSS</a></li>
+         <li><a href="3.html"target="_blank">JavaScript</a></li>
+     </ol>
+        
+    <h2>JavaScript</h2>
+    <p>
+        God, tell us the reason youth is wasted on the young 
+        It's hunting season and the lambs are on the run 
+        Searching for meaning But are we all lost 
+        stars, trying to light up the dark?
+    </p>
+    <input id="night_day2" type="button" value="night" onclick="
+        if (document.querySelector('#night_day2').value === 'night'){
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+         document.querySelector('#night_day2').value = 'day';
+        }
+        else {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+            document.querySelector('#night_day2').value = 'night';
+        }
+    ">
+       
+    
 </body>
 </html>
